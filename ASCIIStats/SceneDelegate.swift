@@ -11,6 +11,8 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var randomnessInstrument: RandomnessInstrument = RandomnessInstrument(initial: RandomnessRun(heads: 0, tails: 0),
+                                                                          blueprint: randomnessViewController())
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = RandomnessViewController()
+            window.rootViewController = self.randomnessInstrument.viewController
             self.window = window
             window.makeKeyAndVisible()
         }

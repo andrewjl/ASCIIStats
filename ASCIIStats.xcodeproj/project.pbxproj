@@ -16,6 +16,7 @@
 		5316280A254BC38E00F79B04 /* ASCIIStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53162809254BC38E00F79B04 /* ASCIIStatsTests.swift */; };
 		53162815254BC38E00F79B04 /* ASCIIStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53162814254BC38E00F79B04 /* ASCIIStatsUITests.swift */; };
 		53162826254BC3A600F79B04 /* RandomnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53162825254BC3A600F79B04 /* RandomnessViewController.swift */; };
+		533D7081254D555A0087FDC8 /* Blueprints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D7080254D555A0087FDC8 /* Blueprints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		53162814254BC38E00F79B04 /* ASCIIStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIIStatsUITests.swift; sourceTree = "<group>"; };
 		53162816254BC38E00F79B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53162825254BC3A600F79B04 /* RandomnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomnessViewController.swift; sourceTree = "<group>"; };
+		533D7080254D555A0087FDC8 /* Blueprints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blueprints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				531627F4254BC38B00F79B04 /* SceneDelegate.swift */,
 				531627F6254BC38B00F79B04 /* ContentView.swift */,
 				53162825254BC3A600F79B04 /* RandomnessViewController.swift */,
+				533D7080254D555A0087FDC8 /* Blueprints.swift */,
 				531627F8254BC38D00F79B04 /* Assets.xcassets */,
 				531627FD254BC38D00F79B04 /* LaunchScreen.storyboard */,
 				53162800254BC38D00F79B04 /* Info.plist */,
@@ -271,6 +274,7 @@
 			files = (
 				531627F3254BC38B00F79B04 /* AppDelegate.swift in Sources */,
 				531627F5254BC38B00F79B04 /* SceneDelegate.swift in Sources */,
+				533D7081254D555A0087FDC8 /* Blueprints.swift in Sources */,
 				53162826254BC3A600F79B04 /* RandomnessViewController.swift in Sources */,
 				531627F7254BC38B00F79B04 /* ContentView.swift in Sources */,
 			);
