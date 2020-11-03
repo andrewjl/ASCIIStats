@@ -37,14 +37,6 @@ struct RandomnessRun {
         
         self.flippingEnd = self.cycles + 100
         self.isFlipping = true
-        
-//        for i in 0..<100 {
-//            let time = DispatchTime.now().advanced(by: .seconds(i))
-//
-//            DispatchQueue.main.asyncAfter(deadline: time) {
-//                self.flip()
-//            }
-//        }
     }
     
     mutating func tick() {
@@ -86,11 +78,6 @@ struct RandomnessRun {
     var flipHundredTimesAction: Change<RandomnessRun> {
         return { $0.flipAHundredTimes() }
     }
-}
-
-struct ReactiveLabel {
-    var element: UILabel
-    var update: (String) -> ()
 }
 
 class RandomnessInstrument {
@@ -139,34 +126,4 @@ class RandomnessViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground
     }
-    
-//    func update() {
-//        let headsIdealString = String(repeating: "*", count: 10)
-//        self.headsIdealLabel?.text = "Heads: " + headsIdealString
-//
-//        let tailsIdealString = String(repeating: "*", count: 10)
-//        self.tailsIdealLabel?.text = "Tails: " + tailsIdealString
-//
-//
-//    }
-//
-//
-//    @objc func updateLabels() {
-//        let headsOutcomeString = String(repeating: "*", count: Int(self.run.heads))
-//        self.headsOutcomesLabel?.text = "Heads \(self.run.heads): " + headsOutcomeString
-//
-//        let tailsOutcomeString = String(repeating: "*", count: Int(self.run.tails))
-//        self.tailsOutcomesLabel?.text = "Tails: \(self.run.tails)" + tailsOutcomeString
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
